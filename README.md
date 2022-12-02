@@ -1,10 +1,19 @@
 # Kickstart
 
-Allows you to create and manage campaigns in the Goerli network using Ethereum smart contracts.
+`Ethereum crowdfunding system`
+
+<p align="center">
+  <img alt="made for ethereum" src="https://img.shields.io/badge/made_for-ethereum-771ea5.svg">
+  <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg">
+</p>
+
+Kickstart allows you to create and manage campaigns in the Goerli network using Ethereum smart contracts.
 
 The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
-Packages utilized:
+---
+
+***Packages utilized:***
 
 - [Next.js](https://nextjs.org/) - Server Rendered Apps
 - [Web3Js](https://web3js.readthedocs.io/en/1.0/) - Ethereum Javascript API
@@ -22,9 +31,22 @@ Packages utilized:
 
 ## Smart Contract
 
-The Campaign contract is deployed at address `???` and is available inside the contracts folder.
+- The contract for Kickstart is deployed at address `0xD7d2347d300718479321E63CA28832454fba9250` and is available inside [ethereum/contracts](https://github.com/minhtran241/kickstart/tree/main/ethereum/contracts). You can explore the deployed contract on TESTNET Goerli (GTH) Blockchain Explorer (Etherscan) at [here](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250)
 
-Our app will interact with the deployed contract to create campaigns.
+- Kickstart will interact with the deployed the contract to create campaigns.
+
+## Quickstart
+
+***Note:*** You have to set up all the environment variables before doing this step`
+*Deploy by connecting to Infura node (specific provider)*
+
+```sh
+yarn compile
+
+yarn test
+
+yarn deploy
+```
 
 ## Running the project
 
