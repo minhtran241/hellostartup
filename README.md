@@ -12,7 +12,7 @@ Packages utilized:
 
 <!-- ![Ethereum Campaigns Project](https://i.imgur.com/ZJnIbFN.gif) -->
 
-## Pre-Requisites
+## Prerequisites
 
 You need to install [Metamask browser extension](https://metamask.io/) and create an account.
 
