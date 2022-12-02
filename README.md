@@ -35,18 +35,18 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
 - Kickstart will interact with the deployed the contract to create campaigns.
 
-## Compile, test and deploy contract
+- Compile, test and deploy contract
 
-***Note:*** You have to set up all the environment variables before doing this step
+    ***Note:*** You have to set up all the environment variables before doing this step
 
-*Deploy by connecting to Infura node (specific provider)*
+    *Deploy by connecting to Infura node (specific provider)*
 
-```sh
-cd ethereum
-yarn compile
-yarn test
-yarn deploy
-```
+    ```sh
+    cd ethereum
+    yarn compile
+    yarn test
+    yarn deploy
+    ```
 
 ## Running the project
 
