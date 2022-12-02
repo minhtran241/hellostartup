@@ -37,7 +37,8 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
 ## Quickstart
 
-***Note:*** You have to set up all the environment variables before doing this step`
+***Note:*** You have to set up all the environment variables before doing this step
+
 *Deploy by connecting to Infura node (specific provider)*
 
 ```sh
