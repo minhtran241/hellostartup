@@ -1,0 +1,14 @@
+{
+  "name": "campaigns",
+  "version": "1.0.0",
+  "author": "Minh Tran",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "setup": "git config core.hooksPath .githooks",
+    "compile": "rm -rf './build' && truffle compile",
+    "deploy": "truffle migrate --network goerli",
+    "ganache": "ganache-cli --accounts=15 --deterministic --defaultBalanceEther=1000000 --quiet",
+    "test": "truffle test"
+  }
+}
