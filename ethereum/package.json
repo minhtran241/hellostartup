@@ -1,8 +1,8 @@
 {
-  "name": "campaigns",
+  "name": "kickstart",
   "version": "1.0.0",
-  "author": "Minh Tran",
   "main": "index.js",
+  "author": "Minh Tran <98200886+minhtran241@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
     "setup": "git config core.hooksPath .githooks",
@@ -10,5 +10,9 @@
     "deploy": "truffle migrate --network goerli",
     "ganache": "ganache-cli --accounts=15 --deterministic --defaultBalanceEther=1000000 --quiet",
     "test": "truffle test"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "dotenv": "^16.0.3"
   }
 }

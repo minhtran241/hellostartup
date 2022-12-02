@@ -1,4 +1,4 @@
-# Ethereum Campaigns
+# Kickstart
 
 Allows you to create and manage campaigns in the Goerli network using Ethereum smart contracts.
 
@@ -14,11 +14,11 @@ Packages utilized:
 
 ## Prerequisites
 
-You need to install [Metamask browser extension](https://metamask.io/) and create an account.
+- [Metamask browser extension](https://metamask.io/) installed and account.
 
-Once your account is ready, you need to add some ether balance using [Goerli Authenticated Faucet](https://goerlifaucet.com).
+- Some ether balance using [Goerli Authenticated Faucet](https://goerlifaucet.com).
 
-In the absence of Metamask, the project will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
+- In the absence of Metamask, the project will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
 
 ## Smart Contract
 

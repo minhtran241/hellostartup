@@ -12,7 +12,7 @@ contract Campaign {
         mapping(address => bool) approvals;
     }
 
-    address public mananger;
+    address public manager;
     uint256 public goal;
     uint256 public minimumPledgeAmount;
     uint256 public backersCount;
@@ -20,7 +20,7 @@ contract Campaign {
     Request[] public requests;
 
     modifier restricted() {
-        require(msg.sender == mananger, "Permission denied");
+        require(msg.sender == manager, "Permission denied");
         _;
     }
 
@@ -29,7 +29,7 @@ contract Campaign {
         uint256 _minimumPledgeAmount,
         address creator
     ) {
-        mananger = creator;
+        manager = creator;
         goal = _goal;
         minimumPledgeAmount = _minimumPledgeAmount;
     }
@@ -37,7 +37,7 @@ contract Campaign {
     function pledge() public payable {
         require(msg.value >= minimumPledgeAmount);
 
-        backers[msg.sender] = msg.value;
+        backers[msg.sender] += msg.value;
         backersCount++;
     }
 
@@ -57,7 +57,7 @@ contract Campaign {
     }
 
     function approveRequest(uint256 index) external {
-        require(msg.sender != mananger);
+        require(msg.sender != manager);
         require(backers[msg.sender] >= minimumPledgeAmount);
 
         Request storage request = requests[index];
