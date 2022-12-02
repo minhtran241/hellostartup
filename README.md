@@ -1,4 +1,4 @@
-# ethereum-campaigns-project
+# Ethereum Campaigns
 
 Allows you to create and manage campaigns in Goerli network using Ethereum smart contracts.
 
