@@ -52,9 +52,7 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 npm run dev
 ```
 
-- Go to the browser at address <http://localhost:3000> to access the web page.
-
-***Note:*** Next.js performs server-side rendering of the pages and hot reloading as you make any changes to the code.
+***Note:*** The web page runs on <http://localhost:3000>. Next.js performs server-side rendering of the pages and hot reloading as you make any changes to the code.
 
 ## Operations
 
