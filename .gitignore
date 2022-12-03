@@ -1,6 +1,13 @@
 # Next build dir
 .next/
 
+# React
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
 .DS_Store
 build/
 node_modules/
