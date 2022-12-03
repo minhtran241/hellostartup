@@ -1,3 +1,6 @@
+# Next build dir
+.next/
+
 .DS_Store
 build/
 node_modules/

@@ -1,13 +1,13 @@
-# Kickstart
+# HelloStartUp
 
-`Ethereum crowdfunding system`
+`Secured Ethereum Crowdfunding Place`
 
 <p align="center">
   <img alt="made for ethereum" src="https://img.shields.io/badge/made_for-ethereum-771ea5.svg">
   <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg">
 </p>
 
-Kickstart allows you to create and manage campaigns in the Goerli network using Ethereum smart contracts.
+HelloStartUp allows you to create and manage campaigns in the Goerli network using Ethereum smart contracts.
 
 The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
@@ -27,13 +27,13 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
 - Some ether balance using [Goerli Authenticated Faucet](https://goerlifaucet.com).
 
-- In the absence of [Metamask]((https://metamask.io/)), Kickstart will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
+- In the absence of [Metamask]((https://metamask.io/)), HelloStartUp will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
 
 ## Smart Contract
 
-- The contract for Kickstart is deployed at address `0xD7d2347d300718479321E63CA28832454fba9250` and is available inside [ethereum/contracts](https://github.com/minhtran241/kickstart/tree/main/ethereum/contracts). You can explore the deployed contract on TESTNET Goerli (GTH) Blockchain Explorer (Etherscan) at [here](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250).
+- The contract for HelloStartUp is deployed at address `0xD7d2347d300718479321E63CA28832454fba9250` and is available inside [ethereum/contracts](https://github.com/minhtran241/HelloStartUp/tree/main/ethereum/contracts). You can explore the deployed contract on TESTNET Goerli (GTH) Blockchain Explorer (Etherscan) at [here](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250).
 
-- Kickstart will interact with the deployed the contract to create campaigns.
+- HelloStartUp will interact with the deployed the contract to create campaigns.
 
 - Compile, test and deploy contract:
 
