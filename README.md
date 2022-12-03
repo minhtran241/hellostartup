@@ -1,9 +1,10 @@
 # HelloStartUp
 
-`Secured Ethereum Crowdfunding Place`
+`Secured Ethereum Crowdfunding Platform`
 
 <p align="center">
   <img alt="made for ethereum" src="https://img.shields.io/badge/made_for-ethereum-771ea5.svg">
+  <img alt="languages" src="https://img.shields.io/github/languages/count/minhtran241/hellostartup">
   <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg">
 </p>
 
