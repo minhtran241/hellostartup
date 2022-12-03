@@ -27,7 +27,7 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
 - Some ether balance using [Goerli Authenticated Faucet](https://goerlifaucet.com).
 
-- In the absence of Metamask, the project will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
+- In the absence of [Metamask]((https://metamask.io/)), Kickstart will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
 
 ## Smart Contract
 
@@ -52,38 +52,36 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 npm run dev
 ```
 
-Go to the browser at address <http://localhost:3000> to access the web page.
+- Go to the browser at address <http://localhost:3000> to access the web page.
 
-Next.js performs server-side rendering of the pages and hot reloading as you make any changes to the code.
+***Note:*** Next.js performs server-side rendering of the pages and hot reloading as you make any changes to the code.
 
 ## Operations
 
 ### Create Campaign
 
-You can create a campaign by specifying the minimum pledge amount required.
+1. Startups can create campaign by specifying the goal of their campaign and minimum pledge amount required.
 
-Once the campaign is created, you become the manager of the campaign and will be able to create requests which need to be approved by the backers.
+2. Once the campaign is created, startups become the manager of their campaign and will be able to create requests for the purpose of building up the campaign which need to be approved by the backers.
 
-Any user who backs below the requirement for the campaign will have their transaction rejected.
+3. Any backers below the requirement for the campaign will have their transaction rejected.
 
 ### View Campaign
 
-Shows details of the campaign such as the address of the account which created the campaign, minimum pledge amount required, campaign balance, number of people who have pledged for the campaign, and number of requests created by the manager.
+Shows details of the campaign such as the address of the account which created the campaign, goal, minimum pledge amount required, campaign current balance, number of people who have pledged for the campaign, and number of requests created by the manager.
 
 ### Back the Campaign
 
-Allows you to pledge and back to the campaign.
+Allows backers to pledge and back to the campaign.
 
 ### View Requests
 
-List the requests created by the manager for the campaign.
+- List the requests created by the manager for building up their campaign.
 
-Backers can approve the requests.
-
-Once the approval criteria are met, the manager can finalize the request for payment to the recipient.
+- Backers of the campaign can approve requests.
 
 ### Add Request
 
-The manager of a campaign can create a request which will be fulfilled by the recipient.
+1. The manager of a campaign can create a request which will be fulfilled by the recipient.
 
-Once equal or more than 50% of the campaign backers approve the request, the manager can finalize the payment to the vendor.
+2. Once equal or more than 50% of the campaign backers approve the request, the startups can finalize the payment to the vendor.
