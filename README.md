@@ -1,6 +1,6 @@
 # HelloStartUp
 
-`Secured Ethereum Crowdfunding Platform`
+***Secured Ethereum Crowdfunding Platform***
 
 <p align="center">
   <img alt="made for ethereum" src="https://img.shields.io/badge/made_for-ethereum-771ea5.svg">
