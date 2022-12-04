@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Card, Button } from 'semantic-ui-react';
-import web3 from '../../ethereum/utils/web3';
-import Campaign from '../../ethereum/build/contracts/Campaign.json';
+import web3 from 'web3';
+import Campaign from '../../ethereum/campaign';
 import Layout from '../../components/Layout';
 import { Link } from '../../routes';
 
@@ -9,14 +9,13 @@ class CampaignShow extends React.Component {
 	static async getInitialProps(props) {
 		const campaign = await Campaign(props.query.address);
 		const summary = await campaign.methods.getSummary().call();
-		console.log(summary);
 		return {
 			address: props.query.address,
 			goal: summary[0],
 			minimumPledgeAmount: summary[1],
-			backersCount: summary[4],
 			balance: summary[2],
-			requestsCount: summary[3],
+			backersCount: summary[3],
+			requestsCount: summary[4],
 			manager: summary[5],
 		};
 	}
@@ -42,10 +41,13 @@ class CampaignShow extends React.Component {
 					'You must pledge at least this much amount of wei to become an backer',
 			},
 			{
-				header: this.props.requestsCount,
-				meta: 'Number of Requests',
+				header: web3.utils.fromWei(
+					this.props.balance,
+					'ether'
+				),
+				meta: 'Campaign Balance (ether)',
 				description:
-					'A requests to withdraw money from the contract. Requests must be approved by backers',
+					'The balance is how much money the campaign has left to spend',
 			},
 			{
 				header: this.props.backersCount,
@@ -54,13 +56,10 @@ class CampaignShow extends React.Component {
 					'Number of backers who have already donated to this campaign',
 			},
 			{
-				header: web3.utils.fromWei(
-					this.props.balance,
-					'ether'
-				),
-				meta: 'Campaign Balance (ether)',
+				header: this.props.requestsCount,
+				meta: 'Number of Requests',
 				description:
-					'The balance is how much money the campaign has left to spend',
+					'A requests to withdraw money from the contract. Requests must be approved by backers',
 			},
 		];
 		return <Card.Group items={items} />;
@@ -77,9 +76,9 @@ class CampaignShow extends React.Component {
 						</Grid.Column>
 						<Grid.Column width={6}>
 							<h3>Contribute to this Campaign</h3>
-							<ContributeForm
+							{/* <ContributeForm
 								address={this.props.address}
-							/>
+							/> */}
 						</Grid.Column>
 					</Grid.Row>
 

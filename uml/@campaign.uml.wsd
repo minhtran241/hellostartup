@@ -15,7 +15,7 @@ class Campaign {
     ' -- usingFor --
 
     ' -- vars --
-	+[[address]] mananger
+	+[[address]] manager
 	+[[uint256]] goal
 	+[[uint256]] minimumPledgeAmount
 	+[[uint256]] backersCount
@@ -28,6 +28,8 @@ class Campaign {
 	+createRequest()
 	+approveRequest()
 	+finalizeRequest()
+	+🔍getSummary()
+	+🔍getRequestsCount()
 
 }
 ' -- inheritance / usingFor --
