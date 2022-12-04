@@ -57,7 +57,7 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 ## Running the project
 
 ```sh
-npm run dev
+yarn dev
 ```
 
 ***Note:*** The web page runs on <http://localhost:3000>. Next.js performs server-side rendering of the pages and hot reloading as you make any changes to the code.
