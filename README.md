@@ -12,31 +12,38 @@ HelloStartUp allows you to create and manage campaigns in the Goerli network usi
 
 The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
+* The project is a decentralized crowdfunding application, built to solve the problem of money being misused by people, collected using the traditional crowdfunding applications.
+* Blockchain helped in keeping track of the money collected using the application, and storing it under the control of a piece of code.
+* Hence not letting the money get into the hands of anyone and removing every possibility of it getting misused. Thus allowing us to reach to a logical solution to the problem in hand.
+* Same as crowdfunding in the real world, you can create campaigns requiring goal and minimum pledge amount.
+* The start up can propose how to use money and how much money is needed as a 'Request'.
+* The start up cannot use money without more than 50% approvers in voting.
+
 ---
 
 ***Packages utilized:***
 
-- [Next.js](https://nextjs.org/) - Server Rendered Apps
-- [Web3Js](https://web3js.readthedocs.io/en/1.0/) - Ethereum Javascript API
-- [Semantic UI](https://react.semantic-ui.com/) - User Interface
+* [Next.js](https://nextjs.org/) - Server Rendered Apps
+* [Web3Js](https://web3js.readthedocs.io/en/1.0/) - Ethereum Javascript API
+* [Semantic UI](https://react.semantic-ui.com/) - User Interface
 
 <!-- ![Ethereum Campaigns Project](https://i.imgur.com/ZJnIbFN.gif) -->
 
 ## Prerequisites
 
-- [Metamask browser extension](https://metamask.io/) installed and account.
+* [Metamask browser extension](https://metamask.io/) installed and account.
 
-- Some ether balance using [Goerli Authenticated Faucet](https://goerlifaucet.com).
+* Some ether balance using [Goerli Authenticated Faucet](https://goerlifaucet.com).
 
-- In the absence of [Metamask]((https://metamask.io/)), HelloStartUp will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
+* In the absence of [Metamask]((https://metamask.io/)), HelloStartUp will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
 
 ## Smart Contract
 
-- The contract for HelloStartUp is deployed at address `0xD7d2347d300718479321E63CA28832454fba9250` and is available inside [ethereum/contracts](https://github.com/minhtran241/HelloStartUp/tree/main/ethereum/contracts). You can explore the deployed contract on TESTNET Goerli (GTH) Blockchain Explorer (Etherscan) at [here](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250).
+* The contract for HelloStartUp is deployed at address `0xD7d2347d300718479321E63CA28832454fba9250` and is available inside [ethereum/contracts](https://github.com/minhtran241/HelloStartUp/tree/main/ethereum/contracts). You can explore the deployed contract on TESTNET Goerli (GTH) Blockchain Explorer (Etherscan) at [here](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250).
 
-- HelloStartUp will interact with the deployed the contract to create campaigns.
+* HelloStartUp will interact with the deployed the contract to create campaigns.
 
-- Compile, test and deploy contract:
+* Compile, test and deploy contract:
 
     ***Note:*** You have to set up all the environment variables before doing this step.
 
@@ -75,9 +82,9 @@ Allows backers to pledge and back to the campaign.
 
 ### View Requests
 
-- List the requests created by the manager for building up their campaign.
+* List the requests created by the manager for building up their campaign.
 
-- Backers of the campaign can approve requests.
+* Backers of the campaign can approve requests.
 
 ### Add Request
 
