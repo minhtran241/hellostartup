@@ -16,7 +16,7 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 * Blockchain helped in keeping track of the money collected using the application, and storing it under the control of a piece of code.
 * Hence not letting the money get into the hands of anyone and removing every possibility of it getting misused. Thus allowing us to reach to a logical solution to the problem in hand.
 * Same as crowdfunding in the real world, you can create campaigns requiring goal and minimum pledge amount.
-* The start up can propose how to use money and how much money is needed as a 'Request'.
+* The start up can propose how to use money and how much money is needed as a `Request`.
 * The start up cannot use money without more than 50% approvers in voting.
 
 ---
