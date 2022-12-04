@@ -1,13 +1,21 @@
 import React from 'react';
 import { Grid, Card, Button } from 'semantic-ui-react';
+import getWeb3 from '../../ethereum/utils/web3';
 import web3 from 'web3';
-import Campaign from '../../ethereum/campaign';
+import campaignContract from '../../ethereum/utils/campaign';
 import Layout from '../../components/Layout';
 import { Link } from '../../routes';
 
 class CampaignShow extends React.Component {
 	static async getInitialProps(props) {
-		const campaign = await Campaign(props.query.address);
+		// Get network provider and web3 instance.
+		const web3 = await getWeb3();
+		// Get the contract instance by passing in web3 and the contract definition.
+		const campaign = await campaignContract(
+			web3,
+			props.query.address
+		);
+		// const campaign = await Campaign(props.query.address);
 		const summary = await campaign.methods.getSummary().call();
 		return {
 			address: props.query.address,
@@ -33,12 +41,14 @@ class CampaignShow extends React.Component {
 				header: this.props.goal,
 				meta: 'Goal (wei)',
 				description: 'The goal of the campaign',
+				style: { overflowWrap: 'break-word' },
 			},
 			{
 				header: this.props.minimumPledgeAmount,
 				meta: 'Minimum Pledge Amount (wei)',
 				description:
 					'You must pledge at least this much amount of wei to become an backer',
+				style: { overflowWrap: 'break-word' },
 			},
 			{
 				header: web3.utils.fromWei(
@@ -48,18 +58,21 @@ class CampaignShow extends React.Component {
 				meta: 'Campaign Balance (ether)',
 				description:
 					'The balance is how much money the campaign has left to spend',
+				style: { overflowWrap: 'break-word' },
 			},
 			{
 				header: this.props.backersCount,
-				meta: 'Number of Backers',
+				meta: 'Current number of Backers',
 				description:
-					'Number of backers who have already donated to this campaign',
+					'Current number of backers who have already donated to this campaign',
+				style: { overflowWrap: 'break-word' },
 			},
 			{
 				header: this.props.requestsCount,
 				meta: 'Number of Requests',
 				description:
-					'A requests to withdraw money from the contract. Requests must be approved by backers',
+					'Number of requests to withdraw money from the contract. Requests must be approved by backers',
+				style: { overflowWrap: 'break-word' },
 			},
 		];
 		return <Card.Group items={items} />;

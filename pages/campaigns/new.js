@@ -7,7 +7,7 @@ import {
 	Grid,
 } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
-import factory from '../../ethereum/utils/factory';
+import factoryContract from '../../ethereum/utils/factory';
 import getWeb3 from '../../ethereum/utils/web3';
 import { Router } from '../../routes';
 
@@ -27,12 +27,12 @@ class CampaignNew extends React.Component {
 			// Get network provider and web3 instance.
 			const web3 = await getWeb3();
 			// Get the contract instance by passing in web3 and the contract definition.
-			const factoryContract = await factory(web3);
+			const factory = await factoryContract(web3);
 			// Use window.ethereum to get the user's accounts.
 			const accounts = await window.ethereum.request({
 				method: 'eth_accounts',
 			});
-			await factoryContract.methods
+			await factory.methods
 				.createCampaign(
 					this.state.goal,
 					this.state.minimumPledgeAmount

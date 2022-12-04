@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Button } from 'semantic-ui-react';
 import Layout from '../components/Layout';
 import { Link } from '../routes';
-import factory from '../ethereum/utils/factory';
+import factoryContract from '../ethereum/utils/factory';
 import getWeb3 from '../ethereum/utils/web3';
 
 class CampaignIndex extends React.Component {
@@ -10,9 +10,9 @@ class CampaignIndex extends React.Component {
 		// Get network provider and web3 instance.
 		const web3 = await getWeb3();
 		// Get the contract instance by passing in web3 and the contract definition.
-		const factoryContract = await factory(web3);
+		const factory = await factoryContract(web3);
 		// Get addresses of all deployed campaigns.
-		const campaigns = await factoryContract.methods
+		const campaigns = await factory.methods
 			.getDeployedCampaigns()
 			.call();
 		return { campaigns };

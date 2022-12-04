@@ -1,6 +1,6 @@
 import CampaignFactory from '../build/contracts/CampaignFactory.json';
 
-const factory = async (web3) => {
+const factoryContract = async (web3) => {
 	// get the deployed address of the contract
 	const contractAddress =
 		'0xd5872c1bC3f375C14B13eA0FA42E72D377A27c58';
@@ -13,4 +13,4 @@ const factory = async (web3) => {
 	return contractInstance;
 };
 
-export default factory;
+export default factoryContract;
