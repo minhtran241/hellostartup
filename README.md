@@ -8,7 +8,7 @@
   <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg">
 </p>
 
-HelloStartUp allows you to create and manage campaigns in the Goerli network using Ethereum smart contracts.
+***HelloStartUp*** allows you to create and manage campaigns in the Goerli network using Ethereum smart contracts.
 
 The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
