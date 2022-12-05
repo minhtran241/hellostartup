@@ -44,7 +44,7 @@ class CampaignNew extends React.Component {
 		} catch (err) {
 			this.setState({ errorMessage: err.message });
 		}
-		this.setState({ loading: false });
+		this.setState({ loading: false, value: '' });
 	};
 
 	render() {

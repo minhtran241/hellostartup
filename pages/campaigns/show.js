@@ -20,6 +20,7 @@ class CampaignShow extends React.Component {
 		return {
 			address: props.query.address,
 			goal: summary[0],
+
 			minimumPledgeAmount: summary[1],
 			balance: summary[2],
 			backersCount: summary[3],
