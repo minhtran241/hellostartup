@@ -1,10 +1,10 @@
 import React from 'react';
 import { Grid, Card, Button } from 'semantic-ui-react';
 import getWeb3 from '../../ethereum/utils/web3';
-import web3 from 'web3';
 import campaignContract from '../../ethereum/utils/campaign';
 import Layout from '../../components/Layout';
 import { Link } from '../../routes';
+import PledgeForm from '../../components/PledgeForm';
 
 class CampaignShow extends React.Component {
 	static async getInitialProps(props) {
@@ -25,6 +25,7 @@ class CampaignShow extends React.Component {
 			backersCount: summary[3],
 			requestsCount: summary[4],
 			manager: summary[5],
+			web3: web3,
 		};
 	}
 
@@ -51,7 +52,7 @@ class CampaignShow extends React.Component {
 				style: { overflowWrap: 'break-word' },
 			},
 			{
-				header: web3.utils.fromWei(
+				header: this.props.web3.utils.fromWei(
 					this.props.balance,
 					'ether'
 				),
@@ -88,10 +89,10 @@ class CampaignShow extends React.Component {
 							{this.renderCards()}
 						</Grid.Column>
 						<Grid.Column width={6}>
-							<h3>Contribute to this Campaign</h3>
-							{/* <ContributeForm
+							<h3>Back this Campaign</h3>
+							<PledgeForm
 								address={this.props.address}
-							/> */}
+							/>
 						</Grid.Column>
 					</Grid.Row>
 

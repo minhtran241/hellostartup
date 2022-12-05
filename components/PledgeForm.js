@@ -1,10 +1,10 @@
 import React from 'react';
 import { Form, Button, Input, Message } from 'semantic-ui-react';
-import Campaign from '../ethereum/campaign';
-import getWeb3 from '../ethereum/web3';
+import campaignContract from '../ethereum/utils/campaign';
+import getWeb3 from '../ethereum/utils/web3';
 import { Router } from '../routes';
 
-class ContributeForm extends React.Component {
+class PledgeForm extends React.Component {
 	state = {
 		value: '',
 		errorMessage: '',
@@ -16,7 +16,6 @@ class ContributeForm extends React.Component {
 
 		this.setState({ loading: true, errorMessage: '' });
 
-		const campaign = Campaign(this.props.address);
 		try {
 			// Get network provider and web3 instance.
 			const web3 = await getWeb3();
@@ -24,7 +23,11 @@ class ContributeForm extends React.Component {
 			const accounts = await window.ethereum.request({
 				method: 'eth_accounts',
 			});
-			await campaign.methods.contribute().send({
+			const campaign = await campaignContract(
+				web3,
+				this.props.address
+			);
+			await campaign.methods.pledge().send({
 				from: accounts[0],
 				value: web3.utils.toWei(this.state.value, 'ether'),
 			});
@@ -43,7 +46,7 @@ class ContributeForm extends React.Component {
 				error={!!this.state.errorMessage}
 			>
 				<Form.Field>
-					<label>Amount to Contribute</label>
+					<label>Pledge Amount</label>
 					<Input
 						label="ether"
 						labelPosition="right"
@@ -63,11 +66,11 @@ class ContributeForm extends React.Component {
 				/>
 
 				<Button loading={this.state.loading} primary>
-					Contribute!
+					Pledge!
 				</Button>
 			</Form>
 		);
 	}
 }
 
-export default ContributeForm;
+export default PledgeForm;
