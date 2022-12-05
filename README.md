@@ -39,7 +39,7 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
 ## Smart Contract
 
-* The contract for HelloStartUp is deployed at address `0xD7d2347d300718479321E63CA28832454fba9250` and is available inside [ethereum/contracts](https://github.com/minhtran241/HelloStartUp/tree/main/ethereum/contracts). You can explore the deployed contract on TESTNET Goerli (GTH) Blockchain Explorer (Etherscan) at [here](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250).
+* The contract for HelloStartUp is deployed at address [0xd5872c1bC3f375C14B13eA0FA42E72D377A27c58](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250) and is available inside [ethereum/contracts](https://github.com/minhtran241/HelloStartUp/tree/main/ethereum/contracts). You can explore the deployed contract on TESTNET Goerli (GTH) Blockchain Explorer (Etherscan) at [here](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250).
 
 * HelloStartUp will interact with the deployed the contract to create campaigns.
 
