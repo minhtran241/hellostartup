@@ -45,7 +45,7 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
 * Compile, test and deploy contract:
 
-    ***Note:*** You have to set up all the environment variables before doing this step.
+    ***Note:*** You have to install required packages by running `yarn install` and set up all the environment variables before doing this step.
 
     ```sh
     cd ethereum
@@ -57,6 +57,7 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 ## Running the project
 
 ```sh
+yarn install
 yarn dev
 ```
 
