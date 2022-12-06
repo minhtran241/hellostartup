@@ -83,14 +83,14 @@ class RequestIndex extends Component {
 							<HeaderCell>Description</HeaderCell>
 							<HeaderCell>Amount</HeaderCell>
 							<HeaderCell>Recipient</HeaderCell>
-							<HeaderCell>Backers Count</HeaderCell>
+							<HeaderCell>Approvers</HeaderCell>
 							<HeaderCell>Approve</HeaderCell>
 							<HeaderCell>Finalize</HeaderCell>
 						</Row>
 					</Header>
 					<Body>{this.renderRows()}</Body>
 				</Table>
-				<div> Found {this.props.requestCount} Requests</div>
+				<div> Found {this.props.requestsCount} requests.</div>
 			</Layout>
 		);
 	}

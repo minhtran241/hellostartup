@@ -59,7 +59,7 @@ class RequestRow extends React.Component {
 					{request.approversCount}/{backersCount}
 				</Cell>
 				<Cell>
-					{request.completed ||
+					{request.complete ||
 					manager == currentAccount ? null : (
 						<Button
 							color="green"
