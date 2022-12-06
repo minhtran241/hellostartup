@@ -37,8 +37,10 @@ contract Campaign {
     function pledge() public payable {
         require(msg.value >= minimumPledgeAmount);
 
+        if (backers[msg.sender] < minimumPledgeAmount) {
+            backersCount++;
+        }
         backers[msg.sender] += msg.value;
-        backersCount++;
     }
 
     function createRequest(
