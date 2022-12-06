@@ -14,7 +14,7 @@ The idea was inspired by [Kickstarter](https://www.kickstarter.com).
 
 ***Problem***
 
-To Increase Transparency and Prevent Fraudulent Activities that arise around the world of StartUps and Platforms that have till now been developed around it such as [Kickstarter](https://www.kickstarter.com). Although stringent measures such as symmetric encryption are in place to make e-payment safe and secure, it is still vulnerable to hacking. Enterprises with in-house e-payment systems must incur additional costs in procuring, installing and maintaining sophisticated payment-security technologies. There is no guarantee that people who post projects on [Kickstarter](https://www.kickstarter.com) will deliver on their projects, use the money to implement their projects, or that the completed projects will meet backers' expectations. A mockup of [Kickstarter](https://www.kickstarter.com) built using smart contracts written in **Solidity**.
+To Increase Transparency and Prevent Fraudulent Activities that arise around the world of StartUps and Platforms that have till now been developed around it such as [Kickstarter](https://www.kickstarter.com). Although stringent measures such as symmetric encryption are in place to make e-payment safe and secure, it is still vulnerable to hacking. Enterprises with in-house e-payment systems must incur additional costs in procuring, installing and maintaining sophisticated payment-security technologies. There is no guarantee that people who post projects on [Kickstarter](https://www.kickstarter.com) will deliver on their projects, use the money to implement their projects, or that the completed projects will meet backers' expectations. ***HelloStartUp*** is a mockup of [Kickstarter](https://www.kickstarter.com) built using smart contracts written in **Solidity**.
 
 ***Solution***
 
@@ -45,13 +45,13 @@ Making transaction histories more transparent and secure through the use of Bloc
 
 * Some ether balance using [Goerli Authenticated Faucet](https://goerlifaucet.com).
 
-* In the absence of [Metamask]((https://metamask.io/)), HelloStartUp will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
+* In the absence of [Metamask]((https://metamask.io/)), ***HelloStartUp*** will fall back to using [Infura node](https://infura.io/) to access the Goerli network.
 
 ## Smart Contract
 
-* The contract for HelloStartUp is deployed at address [0xd5872c1bC3f375C14B13eA0FA42E72D377A27c58](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250) and is available inside [ethereum/contracts](https://github.com/minhtran241/HelloStartUp/tree/main/ethereum/contracts). You can explore the deployed contract on TESTNET Goerli (GTH) Blockchain Explorer (Etherscan) at [here](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250).
+* The contract for ***HelloStartUp*** is deployed at address [0xd5872c1bC3f375C14B13eA0FA42E72D377A27c58](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250) and is available inside [ethereum/contracts](https://github.com/minhtran241/HelloStartUp/tree/main/ethereum/contracts). You can explore the deployed contract on TESTNET Goerli (GTH) Blockchain Explorer (Etherscan) at [here](https://goerli.etherscan.io/address/0xD7d2347d300718479321E63CA28832454fba9250).
 
-* HelloStartUp will interact with the deployed the contract to create campaigns.
+* ***HelloStartUp*** will interact with the deployed the contract to create campaigns.
 
 * Compile, test and deploy contract:
 
